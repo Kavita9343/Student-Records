@@ -1,6 +1,7 @@
 🎓 Project Overview: Student Record Management System
+---
 🧩 Purpose
-
+---
 The Student Record Management System is a web-based application built using Django Framework that allows educational institutions to efficiently store, manage, update, and delete student information.
 It provides a user-friendly interface for administrators or teachers to handle student data without any technical complexity.
 
@@ -42,14 +43,7 @@ Frontend: HTML, CSS, Bootstrap
 
 Database: SQLite (default) or MySQL (optional)
 
-Tools: Django ORM for database operations, CRUD (Create, Read, Update, Delete) functionalities
-
-🧾 Core Functionalities (CRUD Operations)
-Operation	Functionality	Example
-Create	Add new student details	Add a new student record
-Read	View all existing records	Display list of students
-Update	Modify existing details	Edit student’s name or marks
-Delete	Remove unwanted data	Delete a graduated student
+Tools: Django ORM for database operations, CRUD (Create, Read, Update, Delete) functionalitie
 
 💡 Benefits
 ---
