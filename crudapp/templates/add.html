@@ -1,0 +1,30 @@
+{% load static %}
+<html>
+  <head>
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="{%static 'home.css' %}">
+  </head>
+
+  <body>
+    <div id="box">
+      <h2 id="heading">Add New Student</h2>
+
+      <form method="POST">
+        {% csrf_token %}
+        <label>Name:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Course:</label><br>
+        <input type="text" name="course" required><br><br>
+
+        <button type="submit">Add Student</button>
+        </form>
+
+        <a href="/" id="back">Back to List</a>
+</div>
+</body>
+</html>
+

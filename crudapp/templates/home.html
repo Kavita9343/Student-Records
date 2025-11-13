@@ -1,0 +1,22 @@
+{% load static %}
+<html>
+  <head>
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="{%static 'home.css' %}">
+  </head>
+  
+  <body >
+    <div id="box">
+    <h2 id="heading">Student List</h2>
+    <a href="/add/" id="add_student">Add Student</a>
+    <ul>
+      {% for student in students %}
+        <li id="list_item">{{ student.name }} - {{ student.email }} - {{ student.course }}
+        <a href="/edit/{{ student.id }}/" id="update">Edit</a>
+        <a href="/delete/{{ student.id }}/" id="update">Delete</a></li>
+      {% endfor %}
+  </ul>
+  </div>
+</body>
+</html>
+
